@@ -62,3 +62,4 @@ print(a)
 
 # b = Fraction(3, 0)    # Должно вызвать ошибку
 # print(b)
+
