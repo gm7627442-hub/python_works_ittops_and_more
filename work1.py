@@ -19,4 +19,9 @@ while x < 5:
     print((b+a)*10)
     x += 1
 
-while
+for i in range(3):
+    print((('*'*3 + '\n')*3 + ('о'*3 + '\n')*3)*3 +'\n' + 'o'*3 + '*'*3 + 'o'*3)
+   
+        
+
+
