@@ -48,9 +48,9 @@ x = 0
 #     print(x)
 #     x += 2   
 
-# for i in range(1000):
-#     if '3' in str(i):
-#         print(i)
+for i in range(1000):
+    if '3' in str(i):
+        print(i)
 
 for i in range(107, 1000, 10):
     print(i)
