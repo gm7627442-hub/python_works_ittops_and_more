@@ -47,7 +47,7 @@ elif time >= 5 and time <14:
     print('Cейчас утро!')
 elif time >=14 and time <18:
     print('Сейчас день!')
-elif time >=18 and time <=1223:
+elif time >=18 and time <=23:
     print('Сейчас вечер!')
 
 # Задача №3
