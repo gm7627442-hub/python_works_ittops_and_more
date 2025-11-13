@@ -27,7 +27,7 @@ while is_program_work:
     
     else:
         error = 'ОШИБКА:уаказаны не верные данные'
-        
+    
     
     
     if temperature_celsius > 25:
