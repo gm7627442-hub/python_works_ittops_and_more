@@ -18,7 +18,7 @@ for num in original_list:
 
 print("\nИсходный список:")
 print(original_list)
-print("\nРезультирующий список списков:")
+print("\nСписок списков:")
 print("[")
 for i, sublist in enumerate(result_list):
     # Форматируем вывод каждого подсписка
