@@ -1,0 +1,25 @@
+table {
+    border-color: blue;
+    border-width: 2px;
+    border-style: dotted;
+    margin: auto
+}
+
+
+td, th {
+    border-color: black;
+    border-width: 0.4px;
+    border-style: dashed;
+}
+body {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    
+}
+li {
+    list-style-position: inside;
+}
+
