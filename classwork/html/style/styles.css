@@ -1,0 +1,22 @@
+body {
+    background: #007055;
+}
+
+h1 {
+    font-family: 'Courier New', Courier;
+    color:rgba(255,255,255, 0.8);
+    font-size: xx-large;
+}
+
+h2 {
+    font-family: Helvetica, Arial;
+    color: hsl(140, 80%, 90%);
+    font-size: x-large;
+}
+
+p {
+    font-family: monospace;
+    font-size: 20px;
+    color: lightgray;
+    font-weight: 600;
+}
