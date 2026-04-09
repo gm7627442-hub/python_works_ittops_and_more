@@ -11,4 +11,4 @@ table = (
 
 for row in table:
     print(row)
-    
+
