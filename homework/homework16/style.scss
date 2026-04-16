@@ -1,0 +1,75 @@
+// Переменные
+$bg-color: #f4f7fb;
+$card-color: #ffffff;
+$title-color: #1f3c88;
+$text-color: #333333;
+$link-color: #ffffff;
+$contact-bg: #4a69bd;
+$shadow-color: rgba(0, 0, 0, 0.15);
+$radius: 18px;
+
+// Функция для изменения цвета при наведении
+@use "sass:color";
+
+@function hover-color($color) {
+  @return color.adjust($color, $lightness: -12%);
+}
+
+// Примесь для ссылок / кнопок
+@mixin contact-style($bg, $color) {
+  display: inline-block;
+  padding: 12px 18px;
+  background-color: $bg;
+  color: $color;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.page {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #dbeafe, $bg-color);
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 380px;
+  padding: 30px;
+  background-color: $card-color;
+  border-radius: $radius;
+  box-shadow: 0 10px 25px $shadow-color;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 32px;
+    color: $title-color;
+  }
+
+  &__description {
+    margin-bottom: 25px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: $text-color;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__link {
+    @include contact-style($contact-bg, $link-color);
+
+    &:hover {
+      background-color: hover-color($contact-bg);
+      transform: translateY(-2px);
+    }
+  }
+}
