@@ -2,219 +2,290 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>8–я Сосневская</title>
+  <title>8-я Сосневская</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-  <a href="/">
-    <div>
-      <span>8-я</span>
-      <span>СОСНЕВСКАЯ</span>
+  <header class="header">
+    <div class="container header__container">
+      <a href="/" class="logo">
+        <div class="logo__text">
+          <span class="logo__small">8-я</span>
+          <span class="logo__big">СОСНЕВСКАЯ</span>
+        </div>
+      </a>
+
+      <nav class="nav header__nav">
+        <a class="nav__link" href="#advantages">Преимущества</a>
+        <a class="nav__link" href="#infrastructure">Инфраструктура</a>
+        <a class="nav__link" href="#flats">Квартиры</a>
+        <a class="nav__link" href="#mortgage">Ипотека</a>
+        <a class="nav__link" href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__contacts">
+        <span class="header__phone">+7 (495) 255-48-24</span>
+      </div>
     </div>
-  </a>
+  </header>
 
-  <nav>
-    <a href="#advantages">Преимущества</a>
-    <a href="#infrastructure">Инфраструктура</a>
-    <a href="#flats">Квартиры</a>
-    <a href="#mortgage">Ипотека</a>
-    <a href="#contacts">Контакты</a>
-  </nav>
+  <main class="main">
 
-  <div>
-    <span>+7 (495) 255-48-24</span>
-  </div>
-</header>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+        <h1 class="hero__title">8-я СОСНЕВСКАЯ</h1>
 
-<main>
+        <p class="hero__description">
+          Удивлять — вот кредо проекта. Давать больше, чем принято стандартами,
+          предугадывать желания. Комплекс создается по принципу клубной
+          самодостаточности для взыскательных клиентов — здесь предусмотрено все
+          для каждого члена семьи.
+        </p>
 
-  <!-- HERO -->
-  <section>
-    <h1>8–я СОСНЕВСКАЯ</h1>
+        <ul class="hero__stats">
+          <li class="hero__stat">
+            <strong class="hero__stat-number">14</strong>
+            <p class="hero__stat-text">Минут пешком до метро «Тульская»</p>
+          </li>
+          <li class="hero__stat">
+            <strong class="hero__stat-number">21</strong>
+            <p class="hero__stat-text">Минута на авто до метро «Тульская»</p>
+          </li>
+          <li class="hero__stat">
+            <strong class="hero__stat-number">100</strong>
+            <p class="hero__stat-text">Метров до Кремля</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <p>
-      Удивлять — вот кредо проекта. Давать больше, чем принято стандартами,
-      предугадывать желания. Комплекс создается по принципу клубной
-      самодостаточности для взыскательных клиентов — здесь предусмотрено все
-      для каждого члена семьи.
-    </p>
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="advantages section" id="advantages">
+      <div class="container">
+        <h2 class="section__title">Преимущества</h2>
 
-    <ul>
-      <li>
-        <strong>14</strong>
-        <p>Минут пешком до метро «Тульская»</p>
-      </li>
-      <li>
-        <strong>21</strong>
-        <p>Минута на авто до метро «Тульская»</p>
-      </li>
-      <li>
-        <strong>100</strong>
-        <p>Метров до Кремля</p>
-      </li>
-    </ul>
-  </section>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <span class="advantages__number">01</span>
+            <p class="advantages__text">Индивидуальное отопление</p>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__number">02</span>
+            <p class="advantages__text">Тёплые полы</p>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__number">03</span>
+            <p class="advantages__text">Панорамное остекление лоджий</p>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__number">04</span>
+            <p class="advantages__text">Закрытая территория</p>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__number">05</span>
+            <p class="advantages__text">Видеонаблюдение придомовой территории и подъезда</p>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__number">06</span>
+            <p class="advantages__text">Умный домофон</p>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__number">07</span>
+            <p class="advantages__text">Современные лифты</p>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__number">08</span>
+            <p class="advantages__text">Черновая отделка</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- ПРЕИМУЩЕСТВА -->
-  <section id="advantages">
-    <h2>Преимущества</h2>
+    <!-- КВАРТИРЫ -->
+    <section class="flats section" id="flats">
+      <div class="container">
+        <h2 class="section__title">Квартиры</h2>
 
-    <ul>
-      <li><span>01</span><p>Индивидуальное отопление</p></li>
-      <li><span>02</span><p>Тёплые полы</p></li>
-      <li><span>03</span><p>Панорамное остекление лоджий</p></li>
-      <li><span>04</span><p>Закрытая территория</p></li>
-      <li><span>05</span><p>Видеонаблюдение придомовой территории и подъезда</p></li>
-      <li><span>06</span><p>Умный домофон</p></li>
-      <li><span>07</span><p>Современные лифты</p></li>
-      <li><span>08</span><p>Черновая отделка</p></li>
-    </ul>
-  </section>
+        <div class="flats__top">
+          <p class="flats__step">Шаг 2 из 3</p>
+          <p class="flats__subtitle">Выберите квартиру</p>
+        </div>
 
-  <!-- КВАРТИРЫ -->
-  <section id="flats">
-    <h2>Квартиры</h2>
+        <ul class="flats__list">
+          <li class="flats__item">
+            <p class="flats__area">220 м²</p>
+            <p class="flats__rooms">3 комнаты</p>
+            <p class="flats__status flats__status--reserved">Бронь</p>
+          </li>
+          <li class="flats__item">
+            <p class="flats__area">220 м²</p>
+            <p class="flats__rooms">3 комнаты</p>
+            <p class="flats__status flats__status--sold">Продано</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <p>Шаг 2 из 3</p>
-    <p>Выберите квартиру</p>
+    <!-- ИНФРАСТРУКТУРА -->
+    <section class="infrastructure section" id="infrastructure">
+      <div class="container">
+        <h2 class="section__title">Инфраструктура</h2>
 
-    <ul>
-      <li>
-        <p>220 м²</p>
-        <p>3 комнаты</p>
-        <p>Бронь</p>
-      </li>
-      <li>
-        <p>220 м²</p>
-        <p>3 комнаты</p>
-        <p>Продано</p>
-      </li>
-    </ul>
-  </section>
+        <ul class="infrastructure__list">
+          <li class="infrastructure__item">
+            <span class="infrastructure__number">01</span>
+            <h3 class="infrastructure__name">Библиотека</h3>
+            <p class="infrastructure__description">
+              Взрослые деревья, медитативная гладь пруда и деликатно вписанные в зеленое окружение
+            </p>
+          </li>
+          <li class="infrastructure__item">
+            <span class="infrastructure__number">02</span>
+            <h3 class="infrastructure__name">Парковка</h3>
+            <p class="infrastructure__description">
+              Взрослые деревья, медитативная гладь пруда и деликатно вписанные в зеленое окружение
+            </p>
+          </li>
+          <li class="infrastructure__item">
+            <span class="infrastructure__number">03</span>
+            <h3 class="infrastructure__name">Бассейн</h3>
+            <p class="infrastructure__description">
+              Взрослые деревья, медитативная гладь пруда и деликатно вписанные в зеленое окружение
+            </p>
+          </li>
+          <li class="infrastructure__item">
+            <span class="infrastructure__number">04</span>
+            <h3 class="infrastructure__name">Фитнес</h3>
+            <p class="infrastructure__description">
+              Взрослые деревья, медитативная гладь пруда и деликатно вписанные в зеленое окружение
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- ИНФРАСТРУКТУРА -->
-  <section id="infrastructure">
-    <h2>Инфраструктура</h2>
+    <!-- ИПОТЕКА -->
+    <section class="mortgage section" id="mortgage">
+      <div class="container">
+        <h2 class="section__title">Ипотека</h2>
 
-    <ul>
-      <li>
-        <span>01</span>
-        <p>Библиотека</p>
-        <p>Взрослые деревья, медитативная гладь пруда и деликатно вписанные в зеленое окружение</p>
-      </li>
-      <li>
-        <span>02</span>
-        <p>Парковка</p>
-        <p>Взрослые деревья, медитативная гладь пруда и деликатно вписанные в зеленое окружение</p>
-      </li>
-      <li>
-        <span>03</span>
-        <p>Бассейн</p>
-        <p>Взрослые деревья, медитативная гладь пруда и деликатно вписанные в зеленое окружение</p>
-      </li>
-      <li>
-        <span>04</span>
-        <p>Фитнес</p>
-        <p>Взрослые деревья, медитативная гладь пруда и деликатно вписанные в зеленое окружение</p>
-      </li>
-    </ul>
-  </section>
+        <div class="mortgage__tabs">
+          <button class="mortgage__tab" type="button">Ипотека</button>
+          <button class="mortgage__tab" type="button">Семейная ипотека</button>
+          <button class="mortgage__tab" type="button">Ипотека с господдержкой</button>
+          <button class="mortgage__tab" type="button">IT-ипотека</button>
+        </div>
 
-  <!-- ИПОТЕКА -->
-  <section id="mortgage">
-    <h2>Ипотека</h2>
+        <div class="mortgage__info">
+          <div class="mortgage__info-block">
+            <h3 class="mortgage__info-title">Лучшие банки</h3>
+            <p class="mortgage__info-text">
+              Мы сотрудничаем с лучшими банками для предоставления вам ипотеки с отличными условиями
+            </p>
+          </div>
 
-    <div>
-      <button type="button">Ипотека</button>
-      <button type="button">Семейная ипотека</button>
-      <button type="button">Ипотека с господдержкой</button>
-      <button type="button">IT-ипотека</button>
+          <div class="mortgage__info-block">
+            <h3 class="mortgage__info-title">Льготные программы</h3>
+            <p class="mortgage__info-text">
+              Наш дом подходит под большинство льготных программ которые существуют в России
+            </p>
+          </div>
+        </div>
+
+        <div class="mortgage__table-wrapper">
+          <table class="mortgage__table">
+            <thead>
+              <tr>
+                <th>Банк</th>
+                <th>Первоначальный взнос</th>
+                <th>Срок кредитования</th>
+                <th>Процентная ставка</th>
+                <th>Ежемесячный платеж</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Альфа-Банк</td>
+                <td>30%</td>
+                <td>от 1 до 30 лет</td>
+                <td>12.6%</td>
+                <td>92 767 ₽</td>
+                <td><a class="mortgage__link" href="#">Оставить заявку</a></td>
+              </tr>
+              <tr>
+                <td>Сбербанк</td>
+                <td>30%</td>
+                <td>от 1 до 30 лет</td>
+                <td>12.6%</td>
+                <td>92 767 ₽</td>
+                <td><a class="mortgage__link" href="#">Оставить заявку</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЛОКАЦИЯ -->
+    <section class="location section" id="location">
+      <div class="container">
+        <h2 class="section__title">Локация</h2>
+
+        <p class="location__description">
+          Удобное расположение.
+          Поблизости парки, торговые центры, кинотеатры и другие места для отдыха
+        </p>
+
+        <ul class="location__categories">
+          <li class="location__category"><p>Парк</p></li>
+          <li class="location__category"><p>Спорт</p></li>
+          <li class="location__category"><p>Магазин</p></li>
+          <li class="location__category"><p>Водоем</p></li>
+          <li class="location__category"><p>Магазин</p></li>
+          <li class="location__category"><p>Ресторан</p></li>
+        </ul>
+
+        <div class="location__stats">
+          <div class="location__stat">
+            <p class="location__time"><strong>14 / минут</strong></p>
+            <p class="location__text">Пешком до метро «Тульская»</p>
+          </div>
+
+          <div class="location__stat">
+            <p class="location__time"><strong>21 / минут</strong></p>
+            <p class="location__text">Пешком до метро «Тульская»</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="contacts section" id="contacts">
+      <div class="container">
+        <h2 class="section__title">Контакты</h2>
+        <p class="contacts__phone">Телефон: +7 (495) 255-48-24</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <p class="footer__logo">8-я Сосневская</p>
+
+      <nav class="nav footer__nav">
+        <a class="nav__link" href="#advantages">Преимущества</a>
+        <a class="nav__link" href="#infrastructure">Инфраструктура</a>
+        <a class="nav__link" href="#flats">Квартиры</a>
+        <a class="nav__link" href="#mortgage">Ипотека</a>
+        <a class="nav__link" href="#contacts">Контакты</a>
+      </nav>
     </div>
-
-    <h2>Лучшие банки</h2>
-    <p>Мы сотрудничаем с лучшими банками для предоставления вам ипотеки с отличными условиями</p>
-
-    <h2>Льготные программы</h2>
-    <p>Наш дом подходит под большинство льготных программ которые существуют в России</p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Банк</th>
-          <th>Первоначальный взнос</th>
-          <th>Срок кредитования</th>
-          <th>Процентная ставка</th>
-          <th>Ежемесячный платеж</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Альфа-Банк</td>
-          <td>30%</td>
-          <td>от 1 до 30 лет</td>
-          <td>12.6%</td>
-          <td>92 767 ₽</td>
-          <td><a href="#">Оставить заявку</a></td>
-        </tr>
-        <tr>
-          <td>Сбербанк</td>
-          <td>30%</td>
-          <td>от 1 до 30 лет</td>
-          <td>12.6%</td>
-          <td>92 767 ₽</td>
-          <td><a href="#">Оставить заявку</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <!-- ЛОКАЦИЯ -->
-  <section id="location">
-    <h2>Локация</h2>
-
-    <p>
-      Удобное расположение. 
-      Поблизости парки, торговые центры, кинотеатры и другие места для отдыха
-    </p>
-
-    <ul>
-      <li><p>Парк</p></li>
-      <li><p>Спорт</p></li>
-      <li><p>Магазин</p></li>
-      <li><p>Водоем</p></li>
-      <li><p>Магазин</p></li>
-      <li><p>Ресторан</p></li>
-    </ul>
-
-    <p><strong>14 / минут</strong></p>
-    <p>Пешком до метро «Тульская»</p>
-
-    <p><strong>21 / минут</strong></p>
-    <p>Пешком до метро «Тульская»</p>
-  </section>
-
-  <!-- КОНТАКТЫ -->
-  <section id="contacts">
-    <h2>Контакты</h2>
-    <p>Телефон: +7 (495) 255-48-24</p>
-  </section>
-
-</main>
-
-<footer>
-  <p>8-я Сосневская</p>
-  <nav>
-    <a href="#advantages">Преимущества</a>
-    <a href="#infrastructure">Инфраструктура</a>
-    <a href="#flats">Квартиры</a>
-    <a href="#mortgage">Ипотека</a>
-    <a href="#contacts">Контакты</a>
-  </nav>
-</footer>
+  </footer>
 
 </body>
 </html>
-

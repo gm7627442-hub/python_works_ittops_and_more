@@ -1,0 +1,9 @@
+.hero {
+background-image: linear-gradient(rgba(32, 45, 69, 0.5),rgba(32, 45, 69, 0.7)), url('../img/bg1.png');
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+min-height: 130vh;
+position: relative;
+}
+    
