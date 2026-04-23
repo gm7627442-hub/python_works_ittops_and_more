@@ -4,7 +4,6 @@ word2 = 'как дела'
 word3 = ' чувак?'
 word_all = word1 + word2 + word3
 print(word_all)
-print(len('academy'))
-pr
+print(len('academy'r
 
 
