@@ -53,7 +53,7 @@ def measure_time(func):
             result = func(*args, **kwargs)
             return result
         finally:
-            eme()
+            end()
             print(f"Врnd = time.tiемя выполнения: {end - start:.4f} секунд")
 
     return wrapper
