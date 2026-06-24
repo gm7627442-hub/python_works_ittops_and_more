@@ -51,7 +51,7 @@ while is_program_work:
     print('2 - показать статус пасты')
     print('0 - выход')
     print(error)
-    print(">>> ", end='')
+    print(">>> ", end='')awd
     
     user_choice = input().strip()
     
@@ -66,7 +66,7 @@ while is_program_work:
 
 
     if user_choice == "0":
-        is_program_work = False 
+        is_program_work = False adsdaw
     
     elif user_choice == "1":
         piston_n = int(input('Укажите кол-во выдавленой пасты:'))
