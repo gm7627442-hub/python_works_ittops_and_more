@@ -7,12 +7,16 @@ export function calculateSpeed(distance, durationInSeconds) {
     return Number(speed.toFixed(2));
 }
 
-export function calculatePace(distance, durationInSeconds) {
-    const secondsPerKm = durationInSeconds / distance;
-    const minutes = Math.floor(secondsPerKm / 60);
-    const seconds = Math.floor(secondsPerKm % 60)
-    const formatredSeconds = String(seconds).padStart(2, '0')
-    const finalTime = `${minutes}.${formatredSeconds}`
-    
-    return finalTime
+export function calculatePace(distanceKm, durationSeconds) {
+    if (!distanceKm || !durationSeconds || distanceKm <= 0) {
+        return '0 мин 00 сек';
+    }
+
+    const totalSecondsPerKm = durationSeconds / distanceKm;
+    const minutes = Math.floor(totalSecondsPerKm / 60);
+    const seconds = Math.round(totalSecondsPerKm % 60);
+
+    const formattedSeconds = String(seconds).padStart(2, '0');
+
+    return `${minutes} мин ${formattedSeconds} сек`;
 }
