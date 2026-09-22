@@ -45,7 +45,7 @@ function ActivityCard({ activity }) {
             <p>{activity.description}</p>
             <p className={styles.distance}>Дистанция: {activity.distance} км</p>
             <p className={styles.speed}>Скорость: {speed} км/ч</p>
-            <p className={styles.pace}>Темп: {pace} /км</p>
+            <p className={styles.pace}>Темп: {pace} мин/км</p>
             <p className={styles.date}>Дата: {new Date(activity.dateTime).toLocaleString()}</p>
             
             <button 
